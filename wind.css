@@ -1,0 +1,258 @@
+h1{
+    text-align: center;
+    color:brown;
+}
+body{
+    background-color:black;
+    /* height:600px; */
+    width:100%;
+}
+main{
+    background-color: aqua;
+    height:600px;
+    width:100%;
+
+}
+.sec1{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top:28%;
+}
+.base{
+    display: flex;
+    align-items: center;
+}
+.square{
+    height:200px;
+    width:200px;
+    background-color:aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.ball{
+    z-index: 1;
+    height:150px;
+    width:150px;
+    background-color:red;
+    border-radius: 50%;
+}
+.fans{
+    display: grid;
+}
+.fan1{
+    width:300px;
+    height:45px;
+    z-index: 1;
+    background-color: yellow;
+    border-radius: 20px;
+    position: absolute;
+    top:40%;
+    left:30.7%; 
+    transform: rotate(0deg);
+    transform-origin:100% 50%;
+}
+#fan2{
+    width:300px;
+    height:45px;
+    z-index: 1;
+    background-color: yellow;
+    border-radius: 20px;
+    position:absolute;
+    top:40%; 
+    left:50%; 
+    transform: rotate(-60deg);
+    transform-origin: 0% 50%;
+    
+}
+#fan3{
+    width:300px;
+    height:45px;
+    z-index: 1;
+    position: absolute;
+    top:40%; 
+    left:50%; 
+    background-color: yellow;
+    border-radius: 20px;
+    transform: rotate(60deg); 
+    transform-origin: 0% 50%;  
+}
+@keyframes lear{
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}  
+.fan1{
+    animation: lear 5s linear 0s infinite ;
+}
+
+@keyframes roar {
+    100%{
+        transform: rotate(300deg);
+    }
+}
+#fan2{
+    animation: roar 5s linear 0s infinite ;
+}
+@keyframes fear {
+    0%{
+        transform: rotate(60deg);
+    }
+    100%{
+        transform: rotate(420deg);
+    }  
+} 
+#fan3{
+    animation: fear 5s linear 0s infinite ;
+}
+.ball2{
+    z-index: 1;
+    position: absolute;
+    top:34.5%;
+    left:47.7%;
+    width:70px;
+    height:70px;
+    background-color: brown;
+    border-radius: 50%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#ball3{
+    width:10px;
+    height:10px;
+    background-color: red;
+}
+.stand{
+    width:70px;
+    height:350px;
+    z-index: 1;
+    background-color:beige;
+    clip-path: polygon(50% 0%,0% 100%,100% 100%);
+    position: absolute;
+    top:40%;
+    left:47.7%
+}
+
+
+
+h1{
+    text-align: center;
+    color:red;
+    text-decoration: line-through;
+}
+.sec2{
+    height:900px;
+    display: flex;
+}
+#im1{
+    width:100px;
+    height:100px;
+}
+#im2{
+    width:100px;
+    height:100px;
+}
+#im3{
+    width:100px;
+    height:100px;
+}
+#im4{
+    width:100px;
+    height:100px;
+}
+#im5{
+    width:100px;
+    height:100px;
+}
+@keyframes car1{
+    10%{
+        transform: translate(0px,0px);
+    }
+    25%{
+        transform: translate(0px,800px) ;
+    }
+    50%{
+        transform: translate(800px,800px);
+    }
+    75%{
+        transform: translate(800px,0px);
+    }
+}
+.r1{
+    animation: car1 30s infinite linear;
+}
+@keyframes car2{
+    10%{
+        transform: translate(0px,0px);
+    }
+    25%{
+        transform: translate(0px,700px) ;
+    }
+    50%{
+        transform: translate(700px,700px);
+    }
+    75%{
+        transform: translate(700px,0px);
+    }
+}
+.r2{
+    animation: car2 30s infinite linear;
+}
+@keyframes car3{
+    10%{
+        transform: translate(0px,0px);
+    }
+    25%{
+        transform: translate(0px,600px) ;
+    }
+    50%{
+        transform: translate(600px,600px);
+    }
+    75%{
+        transform: translate(600px,0px);
+    }
+}
+.r3{
+    animation: car3 30s infinite linear;
+}
+@keyframes car4{
+    10%{
+        transform: translate(0px,0px);
+    }
+    25%{
+        transform: translate(0px,500px) ;
+    }
+    50%{
+        transform: translate(500px,500px);
+    }
+    75%{
+        transform: translate(500px,0px);
+    }
+}
+.r4{
+    animation: car4 30s infinite linear;
+}
+@keyframes car5{
+    10%{
+        transform: translate(0px,0px);
+    }
+    25%{
+        transform: translate(0px,400px) ;
+    }
+    50%{
+        transform: translate(400px,400px);
+    }
+    75%{
+        transform: translate(400px,0px);
+    }
+}
+.r5{
+    animation: car5 30s infinite linear;
+}
